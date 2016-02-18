@@ -1,0 +1,16 @@
+<h1> Login! </h1>
+
+<div>
+    <label> Username </label>
+    <input type="text" ng-model="user.username">
+</div>
+<div>
+    <label> Password </label>
+    <input type="text" ng-model="user.password">
+</div>
+
+<div ng-repeat="post in posts">
+    {{post.post_text}}
+</div>
+<button ng-click="login()">Login</button>
+<button ng-click="getPosts()">Get Posts</button>
